@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('background2.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: center;
+}
+
+.login-header h2 {
+    margin-bottom: 7px;
+    font-size: 30px;
+    color: #004080;
+}
+
+.login-header p{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.input-group .toggle-password {
+    position: absolute;
+    right: 10px; /* Posisikan di kanan input */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #004080;
+}
+
+.input-group .toggle-password:hover {
+    color: #0a465f;
+}
+
+.forgot-password a{
+    float: right;
+    font-size: 13.5px;
+    color: #004080;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-page .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.login-page .login-button:hover {
+    background-color: #0a465f;
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #004080;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.back-button {
+    padding: 10px;
+    color: #004080;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover{
+    color: #0a465f;
+}
+
+@media (max-width: 768px) {
+    .login-container{
+        justify-content: center;
+        margin: 0;
+    }
+}

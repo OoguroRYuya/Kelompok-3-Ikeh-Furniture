@@ -1,0 +1,146 @@
+.hero {
+    background-color: #e0f0ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    margin-top: 7%;
+    left: 55%;
+    text-align: left;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 20px;
+    max-width: 500px;
+}
+
+.hero-text h2 {
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    color: #004080;
+    font-size: 42px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight:600;
+}
+
+.hero-text p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.hero-text .btn {
+    text-decoration: none;
+    color: white;
+    background-color: #004080;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header{
+        justify-content: space-between;   
+    }
+    
+    .logo h1{
+        font-size: 24px;
+    }
+    
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;        
+        height: auto;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        left: 0;
+        top: 100px;
+    }
+
+    .hero .hero-text{
+        padding-right: 0;
+    }
+
+    .hero-text h2 {
+        font-size: 13px;
+    }
+
+    .hero-text h1 { 
+        font-size: 30px; 
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .hero-text p {
+        font-size: 15px; 
+        line-height: 1.4; 
+    }
+
+    .hero-text .btn {
+        font-size: 13px;
+        padding: 14px 28px;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        transform: translateY(-20px);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .navbar.active {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .navbar ul li a {
+        padding: 10px 20px;
+    }
+
+    .navbar ul li a:hover {
+        color: #0073e6;
+        background-color: #f0f8ff;
+        border-radius: 5px;
+    }
+
+    .toggle-btn {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .toggle-btn.rotate {
+        transform: rotate(180deg);
+    }
+}

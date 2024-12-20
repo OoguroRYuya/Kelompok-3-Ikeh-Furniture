@@ -1,0 +1,158 @@
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 40px 20px;
+    border: 1px solid #888;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal-content .close {
+    color: #aaa; 
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px; 
+    padding: 5px; 
+    cursor: pointer;
+}
+
+
+.modal-content .close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal .furniture-desc{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: center;
+}
+
+.modal #furniture-name {
+    font-size: 24px;
+    max-width: 120px;
+    font-weight: bold;
+    color: #004080;
+}
+
+.modal-content .furniture-image {
+    width: 55%;
+    height: 300px;
+}
+
+.modal-content .furniture-data {
+    color: #333;
+    font-weight: normal;
+}
+
+
+.modal-content .furniture-data p{
+    margin-bottom: 8px;
+}
+
+.modal-content input[type="number"],
+.btn {
+    padding: 10px; 
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.modal-content .btn {
+    background-color: #004080;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 20px;
+} .modal-content-btn:hover {
+    background-color: #000080;
+}
+
+.modal-content .btn[type="submit"]{
+    padding: 15px 30px;
+}
+
+@media (max-width: 768px) {
+    .modal-content{
+        width: 400px;
+    }
+    .modal-content .furniture-image {
+        width: 80%;
+        height: 175px;
+    }   
+
+    .modal-content .close{
+        right: 5px;
+    }
+}
+
+.modal-content .quantity-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-content .quantity-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    margin: 0 15px;
+    padding: 0 20px;
+}
+
+.modal-content .quantity-btn:hover {
+    background-color: #000080;
+}
+
+.modal-content .quantity-container input[type="number"] {
+    width: 60px;
+    height: 40px; /* Sama tinggi dengan tombol */
+    text-align: center;
+    font-size: 16px;
+    padding: 0; /* Hilangkan padding bawaan */
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
